@@ -1,13 +1,66 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>GPE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+    nav {
+      background: rgba(255,255,255,0.95);
+      padding: 16px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .menu a:hover {
+      background: #667eea;
+      color: #fff;
+    }
+    main {
+      min-height: calc(100vh - 72px);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+    h1 { font-size: 3rem; margin-bottom: 12px; }
+    p { font-size: 1.2rem; opacity: 0.95; }
+  </style>
 </head>
 <body>
-  <h1>GPE test</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="buy.html">Buy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div>
+      <h1>Welcome</h1>
+      <p>Select Buy or Support from the menu above.</p>
+    </div>
+  </main>
 
-<script type="text/javascript" charset="utf-8">
+  <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
     g[e] = g[e] || function () {
